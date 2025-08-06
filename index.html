@@ -45,19 +45,28 @@
 
             <!-- Slide 3: Equipo -->
             <section>
-                <h2>👥 NUESTRO EQUIPO</h2>
+                <h2>👥 PARTE DEL EQUIPO DE DIGIALL</h2>
                 
-                <div style="display: flex; justify-content: space-around; align-items: center; width: 100%; margin: 2em 0;">
-                    <h3>👨‍💻 Ing. Joel Dávila</h3>
-                    <h3>👨‍💼 Ing. Oscar Zacaula</h3>
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; width: 100%; margin: 2em 0;">
+                    <div style="text-align: center; flex: 1; margin: 0 2em;">
+                        <img src="resources/images/team/joel.jpeg" alt="Ing. Joel Dávila" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1em;">
+                        <h3>👨‍💻 Ing. Joel Dávila</h3>
+                        <p style="font-size: 0.8em; color: #624059;">
+                            <a href="https://linkedin.com/in/joeldrt/" target="_blank" style="color: #624059; text-decoration: none;">🔗 linkedin.com/in/joeldrt/</a>
+                        </p>
+                    </div>
+                    
+                    <div style="text-align: center; flex: 1; margin: 0 2em;">
+                        <img src="resources/images/team/oscar.jpeg" alt="Ing. Oscar Zacaula" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1em;">
+                        <h3>👨‍💼 Ing. Oscar Zacaula</h3>
+                        <p style="font-size: 0.8em; color: #624059;">
+                            <a href="https://linkedin.com/in/oscarzacaula/" target="_blank" style="color: #624059; text-decoration: none;">🔗 linkedin.com/in/oscarzacaula/</a>
+                        </p>
+                    </div>
                 </div>
 
-                <div style="text-align: center; margin: 1em 0;">
-                    <img src="resources/images/digiall-team.jpg" alt="Equipo Digiall" style="max-width: 300px; width: 100%; height: auto; border-radius: 10px;">
-                </div>
-
-                <div class="engineering-focus" style="margin-top: 30px;">
-                    🏗️ <strong>Filosofía del equipo:</strong> "Todo ingeniero civil debería enfocarse en construir, no en llenar formatos"
+                <div style="text-align: center; margin-top: 30px; font-size: 1.2em; color: #624059; font-weight: bold;">
+                    "Todo ingeniero debería enfocarse en construir, no en llenar formatos"
                 </div>
                 
                 <aside class="notes">
@@ -216,26 +225,29 @@
                 </aside>
             </section>
 
-            <!-- Slide 11: Niveles de Interacción con LLMs -->
+            <!-- Slide 11: Formas de Interactuar con los LLMs -->
             <section>
-                <h2>⚡ Niveles de Interacción con los LLMs</h2>
+                <h2>⚡ Formas de Interactuar con los LLMs</h2>
                 
-                <div class="diagram-placeholder">
-                    <h3>🔄 Diagrama de Niveles de Interacción</h3>
-                    <p>Aquí irán las imágenes de:</p>
-                    <ul>
-                        <li><strong>💬 Chat:</strong> Consultas rápidas desde el celular en obra</li>
-                        <li><strong>🛠️ Studio/IDE:</strong> Prototipos de reportes personalizados</li>
-                        <li><strong>🤖 API:</strong> Automatización completa de flujos de trabajo</li>
-                    </ul>
+                <div style="display: flex; justify-content: space-around; align-items: center; margin: 20px 0;">
+                    <div style="text-align: center; flex: 1;">
+                        <h4>💬 Chat</h4>
+                        <img src="resources/images/interfaces/chat.png" alt="Interfaz de Chat" style="max-width: 100%; height: 200px; object-fit: contain; border-radius: 10px;">
+                        <p style="font-size: 0.7em; color: #888888;">Consultas rápidas</p>
+                    </div>
+                    <div style="text-align: center; flex: 1;">
+                        <h4>🛠️ Studio</h4>
+                        <img src="resources/images/interfaces/studio.png" alt="Interfaz de Studio" style="max-width: 100%; height: 200px; object-fit: contain; border-radius: 10px;">
+                        <p style="font-size: 0.7em; color: #888888;">Prototipos personalizados</p>
+                    </div>
+                    <div style="text-align: center; flex: 1;">
+                        <h4>🤖 Workflows</h4>
+                        <img src="resources/images/interfaces/code-workflows.png" alt="Interfaz de Workflows" style="max-width: 100%; height: 200px; object-fit: contain; border-radius: 10px;">
+                        <p style="font-size: 0.7em; color: #888888;">Automatización completa</p>
+                    </div>
                 </div>
 
-                <div class="engineering-focus">
-                    🏗️ <strong>Evolución del ingeniero civil:</strong><br>
-                    📱 <strong>Nivel 1:</strong> "¿Cómo calculo el volumen de concreto para esta losa?"<br>
-                    🖥️ <strong>Nivel 2:</strong> Subir archivos CAD y generar reportes personalizados<br>
-                    ⚙️ <strong>Nivel 3:</strong> Sistema automático que procesa notas de voz → bitácora → reporte ejecutivo
-                </div>
+
                 
                 <aside class="notes">
                     Chat: Lo que todos conocen, perfecto para consultas rápidas en obra desde el celular. "¿Cuánto cemento necesito para 50m² de losa de 10cm?" Studio: Para crear herramientas específicas de tu empresa, subir plantillas de reportes, conectar con Drive. Aquí prototipas antes de automatizar. API: La automatización real donde tu equipo en campo solo habla y todo se procesa automáticamente. El mismo cerebro LLM, pero diferentes niveles de sofisticación y automatización.
@@ -246,19 +258,8 @@
             <section>
                 <h2>🤖 Agentes</h2>
                 
-                <ul>
-                    <li>🧠 <strong>Definición:</strong> IA que actúa como un asistente especializado en construcción que toma decisiones autónomas</li>
-                    <li>⚡ <strong>Capacidades:</strong> Clasificar notas de obra, calcular costos, actualizar cronogramas, generar alertas</li>
-                    <li>🏗️ <strong>Aplicaciones en obra:</strong> Supervisor virtual de bitácoras, controlador automático de gastos, generador de reportes ejecutivos</li>
-                </ul>
-                
-                <div class="engineering-focus">
-                    💡 <strong>Ejemplo práctico:</strong> Un agente puede recibir tu audio "Llegaron 5 toneladas de varilla", automáticamente actualizar inventario, verificar contra el presupuesto, y si hay desviación, enviar alerta al director de proyecto.
-                </div>
-                
-                <div class="diagram-placeholder">
-                    <h3>🤖 Diagrama de Agentes</h3>
-                    <p>Aquí irá la imagen explicativa de cómo funcionan los agentes en obra</p>
+                <div style="text-align: center; margin: 40px 0;">
+                    <img src="resources/images/agent/agent.png" alt="Diagrama de Agentes" style="max-width: 80%; height: auto; border-radius: 10px;">
                 </div>
                 
                 <aside class="notes">
@@ -268,24 +269,10 @@
 
             <!-- Slide 13: Taller -->
             <section>
-                <h2>🛠️ Taller</h2>
+                <h2>🔧 Taller</h2>
                 
-                <div style="text-align: center; padding: 60px;">
-                    <h3>🏗️ Práctica: De la Obra al Dato</h3>
-                    <p style="font-size: 1.2em; color: #888888;">Automatizaremos el flujo completo de información de obra</p>
-                </div>
-
-                <div class="engineering-focus">
-                    🎯 <strong>Objetivo:</strong> Crear un sistema donde el ingeniero residente solo graba audios y automáticamente se generan:
-                    <ul>
-                        <li>📋 Bitácora digital actualizada</li>
-                        <li>💰 Control de gastos en tiempo real</li>
-                        <li>📊 Reportes ejecutivos para el cliente</li>
-                    </ul>
-                </div>
-
-                <div class="engineering-focus">
-                    ⚡ <strong>Tecnologías que usaremos:</strong> Telegram (captura) → n8n (automatización) → Google Sheets (datos) → AI Studio (reportes)
+                <div style="text-align: center; margin: 20px 0; padding: 0 1em;">
+                    <img src="resources/images/workshop/workshop.png" alt="Diagrama del Taller" style="max-width: 80%; width: auto; height: auto; border-radius: 10px; object-fit: contain;">
                 </div>
                 
                 <aside class="notes">
@@ -295,22 +282,10 @@
 
             <!-- Slide 14: Fin -->
             <section>
-                <h2>🎯 Fin</h2>
+                <h1>FIN</h1>
                 
-                <div style="text-align: center; padding: 60px;">
-                    <h3>🏗️ ¡Gracias, colegas ingenieros!</h3>
-                    <p style="color: #888888;">¿Preguntas sobre automatización en construcción?</p>
-                    <br>
-                    <div class="engineering-focus">
-                        <p><strong>🚀 Digiall</strong></p>
-                        <p>🌐 www.digiall.mx</p>
-                        <p>📞 55 4440 5487</p>
-                        <p>📧 Consultas gratuitas para implementación en obras</p>
-                    </div>
-                </div>
-
-                <div class="engineering-focus">
-                    💡 <strong>Próximos pasos:</strong> Si quieren implementar este sistema en su constructora, podemos hacer una consultoría gratuita para evaluar sus procesos actuales y diseñar la automatización específica.
+                <div style="text-align: center; margin-top: 50px;">
+                    <img src="resources/images/digiall-logo.webp" alt="Digiall Logo" style="width: 300px; height: auto;">
                 </div>
                 
                 <aside class="notes">
