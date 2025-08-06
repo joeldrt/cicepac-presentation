@@ -200,3 +200,44 @@
     transform: scale(1);
     opacity: 1;
 }
+
+/* Efectos modal para imágenes */
+.modal-image.fragment {
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+/* Primer paso: Imagen en modo modal (grande) */
+.modal-image.fragment:not(.visible) {
+    opacity: 0;
+    transform: scale(0.1);
+}
+
+.modal-image.fragment.visible:not(.final-position) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 1000;
+    opacity: 1;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    border-radius: 15px;
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+}
+
+/* Segundo paso: Imagen en posición final */
+.modal-image.fragment.visible.final-position {
+    position: relative;
+    transform: scale(1);
+    z-index: 1;
+    opacity: 1;
+    box-shadow: none;
+}
+
+/* Elemento invisible para controlar la transición */
+.modal-to-position {
+    display: none;
+}
