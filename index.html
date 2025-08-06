@@ -111,9 +111,9 @@
             <section>
                 <h2>🔄 LENGUAJE A TOKEN - TOKEN A LENGUAJE</h2>
                 
-                <div style="display: flex; justify-content: space-between; align-items: center; margin: 2em 0;">
-                    <div style="flex: 1; text-align: center; margin: 0 1em;">
-                        <h3 style="font-size: 1em; margin-bottom: 1em;">Palabras → Tokens</h3>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin: 2em 0;">
+                    <div style="flex: 1; text-align: center; margin: 0 1em; display: flex; flex-direction: column; align-items: center;">
+                        <h3 style="font-size: 1em; margin-bottom: 1em; height: 2em; display: flex; align-items: center;">Palabras → Tokens</h3>
                         <img src="resources/images/words-tokens.png" 
                              alt="Conversión de palabras a tokens" 
                              class="fragment modal-image" 
@@ -122,8 +122,8 @@
                         <div class="fragment modal-to-position" data-fragment-index="2"></div>
                     </div>
                     
-                    <div style="flex: 1; text-align: center; margin: 0 1em;">
-                        <h3 style="font-size: 1em; margin-bottom: 1em;">Tokens → Vectores</h3>
+                    <div style="flex: 1; text-align: center; margin: 0 1em; display: flex; flex-direction: column; align-items: center;">
+                        <h3 style="font-size: 1em; margin-bottom: 1em; height: 2em; display: flex; align-items: center;">Tokens → Vectores</h3>
                         <img src="resources/images/words-vectors.png" 
                              alt="Conversión de tokens a vectores" 
                              class="fragment modal-image" 
@@ -145,7 +145,12 @@
                 <h2>🪟 VENTANA DE CONTEXTO</h2>
                 
                 <div style="text-align: center; margin: 2em 0;">
-                    <img src="resources/images/context-window.png" alt="Ventana de Contexto" style="width: 80%; max-width: 600px; height: auto; border-radius: 10px;">
+                    <img src="resources/images/context-window.png" 
+                         alt="Ventana de Contexto" 
+                         class="fragment modal-image context-window-image" 
+                         data-fragment-index="1"
+                         style="width: 80%; max-width: 600px; height: auto; border-radius: 10px;">
+                    <div class="fragment modal-to-position" data-fragment-index="2"></div>
                 </div>
                 
                 <aside class="notes">
