@@ -1,0 +1,175 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Variables CSS */
+:root {
+    --r-main-font: 'Inter', sans-serif;
+    --r-heading-font: 'Inter', sans-serif;
+    --r-main-color: #888888; /* DIGIALL Grey */
+    --r-heading-color: #624059; /* DIGIALL Purple */
+    --r-link-color: #624059; /* DIGIALL Purple */
+}
+
+/* Configuración general de Reveal.js */
+.reveal {
+    font-size: 24px; /* Reduced base font size */
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-weight: 700;
+}
+
+.reveal h1 { 
+    font-size: 2.5em; 
+}
+
+.reveal h2 { 
+    font-size: 1.8em; 
+}
+
+.reveal h3 { 
+    font-size: 1.3em; 
+}
+
+.reveal p, .reveal li { 
+    font-size: 0.9em; 
+}
+
+/* Layout de secciones */
+.reveal .slides section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Layout dividido */
+.split-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.split-layout .text-content, .split-layout .image-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5em; /* Reduced padding */
+}
+
+.split-layout .text-content {
+    text-align: left;
+}
+
+.split-layout .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* Estilos específicos para la presentación "De la Obra al Dato" */
+.reveal .slides section {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2 {
+    text-align: center;
+    color: #624059;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.reveal p, .reveal li, .reveal td {
+    color: #888888;
+    font-size: 0.8em;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.company-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.diagram-placeholder {
+    background: #e9ecef;
+    border: 2px dashed #6c757d;
+    padding: 60px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.llm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+
+.llm-table th, .llm-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+    color: #888888;
+}
+
+.llm-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #624059;
+}
+
+.speaker-notes {
+    display: none;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.timeline-item {
+    text-align: center;
+    flex: 1;
+    color: #888888;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.timeline-item h4 {
+    color: #624059;
+    font-size: 1em;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -15px;
+    font-size: 24px;
+    color: #624059;
+}
+
+.engineering-focus {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}

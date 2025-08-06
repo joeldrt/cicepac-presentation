@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>De la Obra al Dato - DigiAll</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Título -->
+            <section>
+                <h1>🏗️ De la Obra al Dato</h1>
+                <div class="logo-container">
+                    <p style="font-size: 1em; margin: 10px 0; color: #888888;">Cómo la IA está Automatizando el Control de Proyectos</p>
+                    <img src="resources/images/digiall-logo.webp" alt="Digiall Logo" style="width: 200px; height: auto; margin: 40px 0 20px 0;">
+                    <p>👨‍💼 Ing. Oscar Zacaula • 👨‍💻 Ing. Joel Dávila</p>
+                </div>
+                
+
+            </section>
+
+            <!-- Slide 2: Somos Digiall -->
+            <section>
+                <h2>Somos Digiall 🤝</h2>
+                <h4 style="text-align: center;">Su Socio en Soluciones Tecnológicas Integrales</h4>
+                <div style="display: flex; justify-content: space-around; width: 100%; margin-top: 2em;">
+                    <div class="fragment" style="text-align: center;">💻<p>Software</p></div>
+                    <div class="fragment" style="text-align: center;">📹<p>Seguridad</p></div>
+                    <div class="fragment" style="text-align: center;">🌐<p>Infraestructura</p></div>
+                    <div class="fragment" style="text-align: center;">🛠️<p>Soporte TI</p></div>
+                </div>
+                <aside class="notes">
+                    En Digiall, nuestra misión es ser el socio tecnológico que impulsa la eficiencia y seguridad de las empresas. No nos limitamos a instalar equipos; diseñamos e implementamos soluciones tecnológicas integrales. Ya sea robusteciendo la seguridad de una obra con cámaras y controles de acceso, o centralizando toda la gestión de una empresa con un ERP como Odoo, nuestro objetivo es que la tecnología trabaje para ustedes.
+                </aside>
+            </section>
+
+
+            <!-- Slide 3: Equipo -->
+            <section>
+                <h2>👥 NUESTRO EQUIPO</h2>
+                
+                <div style="display: flex; justify-content: space-around; align-items: center; width: 100%; margin: 2em 0;">
+                    <h3>👨‍💻 Ing. Joel Dávila</h3>
+                    <h3>👨‍💼 Ing. Oscar Zacaula</h3>
+                </div>
+
+                <div style="text-align: center; margin: 1em 0;">
+                    <img src="resources/images/digiall-team.jpg" alt="Equipo Digiall" style="max-width: 300px; width: 100%; height: auto; border-radius: 10px;">
+                </div>
+
+                <div class="engineering-focus" style="margin-top: 30px;">
+                    🏗️ <strong>Filosofía del equipo:</strong> "Todo ingeniero civil debería enfocarse en construir, no en llenar formatos"
+                </div>
+                
+                <aside class="notes">
+                    Oscar y Joel forman un equipo complementario con más de 10 años de experiencia automatizando procesos en construcción. Oscar aporta la visión de negocio y conocimiento operativo de obra, mientras Joel aporta la expertise técnica para materializar soluciones de IA. Han implementado sistemas en obras donde los ingenieros perdían horas en reportes manuales, desarrollando soluciones específicas para construcción que son simples pero potentes. Su enfoque está en hacer accesible la tecnología de IA para resolver problemas operativos reales.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Brevísima Historia de la IA -->
+            <section>
+                <h2>📈 Brevísima Historia de la IA</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>🧮 Primeras Máquinas</h4>
+                        <p>Cálculo de estructuras automático</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>🧠 Machine Learning</h4>
+                        <p>Predicción de comportamientos</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>🔥 Deep Learning</h4>
+                        <p>Reconocimiento de patrones complejos</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>💬 LLMs</h4>
+                        <p>Era actual: IA conversacional</p>
+                    </div>
+                </div>
+
+
+                
+                <aside class="notes">
+                    La IA es una de las múltiples maneras que hay para que las máquinas interactúen con nosotros y nuestros datos. Para ingenieros civiles: comenzamos con calculadoras para estructuras, ahora tenemos sistemas que pueden leer notas de voz del campo y generar reportes técnicos completos. Machine Learning es el campo amplio, LLMs son una implementación específica que está viviendo una explosión actualmente. Puede haber otros modelos más avanzados en el futuro que no sean LLMs.
+                </aside>
+            </section>
+
+            <!-- Slide 7: Lenguaje a Token - Token a Lenguaje -->
+            <section>
+                <h2>🔄 LENGUAJE A TOKEN - TOKEN A LENGUAJE</h2>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin: 2em 0;">
+                    <div style="flex: 1; text-align: center; margin: 0 1em;">
+                        <h3 style="font-size: 1em; margin-bottom: 1em;">Palabras → Tokens</h3>
+                        <img src="resources/images/words-tokens.png" alt="Conversión de palabras a tokens" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
+                    </div>
+                    
+                    <div style="flex: 1; text-align: center; margin: 0 1em;">
+                        <h3 style="font-size: 1em; margin-bottom: 1em;">Tokens → Vectores</h3>
+                        <img src="resources/images/words-vectors.png" alt="Conversión de tokens a vectores" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+
+
+                
+                <aside class="notes">
+                    Los modelos LLM (Large Language Models) son funciones matemáticas enormes y complejas. A diferencia de las funciones algebraicas tradicionales, son funciones probabilísticas que trabajan principalmente con vectores y matrices multidimensionales. El proceso es: un vector o matriz entra a la función, esta procesa la información a través de múltiples capas neuronales y arroja otro vector como resultado, que finalmente se traduce de vuelta a texto comprensible.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Ventana de Contexto -->
+            <section>
+                <h2>🪟 VENTANA DE CONTEXTO</h2>
+                
+                <div style="text-align: center; margin: 2em 0;">
+                    <img src="resources/images/context-window.png" alt="Ventana de Contexto" style="width: 80%; max-width: 600px; height: auto; border-radius: 10px;">
+                </div>
+                
+                <aside class="notes">
+                    La ventana de contexto incluye: lo que escribes nuevo, lo que escribiste antes, lo que la IA respondió antes, e instrucciones del sistema. Es como una pizarra con tamaño limitado. En construcción: si cargas información de 6 meses de obra de una vez, la IA puede perder detalles de los primeros meses. Mejor alimentarla por etapas o actividades específicas. Mientras más interactúas, más se llena y empieza a "olvidar" lo más antiguo. Por eso experimentan alucinaciones y degradación mientras más larga se hace la conversación.
+                </aside>
+            </section>
+
+            <!-- Slide 9: Prompt -->
+            <section>
+                <h2>📝 PROMPT</h2>
+                
+                <div style="text-align: center; margin: 2em 0; padding: 0 1em;">
+                    <img src="resources/images/prompt-structure.png" alt="Estructura del Prompt" style="max-width: 50%; width: auto; height: auto; border-radius: 10px; object-fit: contain;">
+                </div>
+                
+                <aside class="notes">
+                    Un prompt no es solo lo último que escribiste, sino todo el historial de la conversación que cabe en la ventana. En construcción: si le das contexto sobre el tipo de proyecto (residencial, comercial, industrial), el tipo de reporte que necesitas (avance, calidad, seguridad), y el formato que requieres (tabla, narrativo, checklist), obtendrás resultados mucho mejores. El contexto es clave: la capacidad de darle al LLM pedazos de información relevantes para que pueda actuar. No es meter todos los bloques de información, hay que ir separando lo relevante por actividad o especialidad.
+                </aside>
+            </section>
+
+            <!-- Slide 10: LLM - Modelos de Lenguaje -->
+            <section>
+                <h2>🤖 LLM - Modelos de Lenguaje</h2>
+                
+                <table class="llm-table">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>Modelo</th>
+                            <th>Ideal para construcción</th>
+                            <th>Acceso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🤖</td>
+                            <td>GPT-4</td>
+                            <td>📋 Reportes técnicos detallados, cálculos complejos</td>
+                            <td>ChatGPT / API</td>
+                        </tr>
+                        <tr>
+                            <td>💎</td>
+                            <td>Claude</td>
+                            <td>📄 Análisis de especificaciones y planos</td>
+                            <td>Claude.ai / API</td>
+                        </tr>
+                        <tr>
+                            <td>🌟</td>
+                            <td>Gemini</td>
+                            <td>📱 Integración con Google Drive/Sheets para datos</td>
+                            <td>Gemini / Studio</td>
+                        </tr>
+                        <tr>
+                            <td>🔥</td>
+                            <td>Llama</td>
+                            <td>🏢 Instalación local para datos confidenciales</td>
+                            <td>Hugging Face / Local</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                
+                <aside class="notes">
+                    Cada modelo tiene sus fortalezas específicas para construcción. GPT-4 es excelente para reportes detallados y cálculos. Claude maneja bien documentos largos como especificaciones. Gemini se integra perfectamente con Google Workspace que muchas constructoras usan. Llama permite instalación local para proyectos confidenciales. La API permite automatización real, no es lo mismo que el chat manual. Para uso profesional en obra, los costos son mínimos comparados con el tiempo ahorrado. Incluir referencia a páginas como lmsys.org para comparaciones actualizadas.
+                </aside>
+            </section>
+
+            <!-- Slide 11: Niveles de Interacción con LLMs -->
+            <section>
+                <h2>⚡ Niveles de Interacción con los LLMs</h2>
+                
+                <div class="diagram-placeholder">
+                    <h3>🔄 Diagrama de Niveles de Interacción</h3>
+                    <p>Aquí irán las imágenes de:</p>
+                    <ul>
+                        <li><strong>💬 Chat:</strong> Consultas rápidas desde el celular en obra</li>
+                        <li><strong>🛠️ Studio/IDE:</strong> Prototipos de reportes personalizados</li>
+                        <li><strong>🤖 API:</strong> Automatización completa de flujos de trabajo</li>
+                    </ul>
+                </div>
+
+                <div class="engineering-focus">
+                    🏗️ <strong>Evolución del ingeniero civil:</strong><br>
+                    📱 <strong>Nivel 1:</strong> "¿Cómo calculo el volumen de concreto para esta losa?"<br>
+                    🖥️ <strong>Nivel 2:</strong> Subir archivos CAD y generar reportes personalizados<br>
+                    ⚙️ <strong>Nivel 3:</strong> Sistema automático que procesa notas de voz → bitácora → reporte ejecutivo
+                </div>
+                
+                <aside class="notes">
+                    Chat: Lo que todos conocen, perfecto para consultas rápidas en obra desde el celular. "¿Cuánto cemento necesito para 50m² de losa de 10cm?" Studio: Para crear herramientas específicas de tu empresa, subir plantillas de reportes, conectar con Drive. Aquí prototipas antes de automatizar. API: La automatización real donde tu equipo en campo solo habla y todo se procesa automáticamente. El mismo cerebro LLM, pero diferentes niveles de sofisticación y automatización.
+                </aside>
+            </section>
+
+            <!-- Slide 12: Agentes -->
+            <section>
+                <h2>🤖 Agentes</h2>
+                
+                <ul>
+                    <li>🧠 <strong>Definición:</strong> IA que actúa como un asistente especializado en construcción que toma decisiones autónomas</li>
+                    <li>⚡ <strong>Capacidades:</strong> Clasificar notas de obra, calcular costos, actualizar cronogramas, generar alertas</li>
+                    <li>🏗️ <strong>Aplicaciones en obra:</strong> Supervisor virtual de bitácoras, controlador automático de gastos, generador de reportes ejecutivos</li>
+                </ul>
+                
+                <div class="engineering-focus">
+                    💡 <strong>Ejemplo práctico:</strong> Un agente puede recibir tu audio "Llegaron 5 toneladas de varilla", automáticamente actualizar inventario, verificar contra el presupuesto, y si hay desviación, enviar alerta al director de proyecto.
+                </div>
+                
+                <div class="diagram-placeholder">
+                    <h3>🤖 Diagrama de Agentes</h3>
+                    <p>Aquí irá la imagen explicativa de cómo funcionan los agentes en obra</p>
+                </div>
+                
+                <aside class="notes">
+                    Los agentes van más allá del chat simple. En construcción pueden actuar como un residente virtual que nunca se cansa ni olvida. Pueden tomar decisiones como: "Esta nota habla de materiales, va al control de inventario", "Este gasto excede el presupuesto, alertar al PM", "Estos avances indican retraso, sugerir acciones correctivas". En n8n cada agente tiene instrucciones específicas de cómo actuar en diferentes escenarios de obra. Es el paso hacia la automatización completa donde el ingeniero solo supervisa excepciones.
+                </aside>
+            </section>
+
+            <!-- Slide 13: Taller -->
+            <section>
+                <h2>🛠️ Taller</h2>
+                
+                <div style="text-align: center; padding: 60px;">
+                    <h3>🏗️ Práctica: De la Obra al Dato</h3>
+                    <p style="font-size: 1.2em; color: #888888;">Automatizaremos el flujo completo de información de obra</p>
+                </div>
+
+                <div class="engineering-focus">
+                    🎯 <strong>Objetivo:</strong> Crear un sistema donde el ingeniero residente solo graba audios y automáticamente se generan:
+                    <ul>
+                        <li>📋 Bitácora digital actualizada</li>
+                        <li>💰 Control de gastos en tiempo real</li>
+                        <li>📊 Reportes ejecutivos para el cliente</li>
+                    </ul>
+                </div>
+
+                <div class="engineering-focus">
+                    ⚡ <strong>Tecnologías que usaremos:</strong> Telegram (captura) → n8n (automatización) → Google Sheets (datos) → AI Studio (reportes)
+                </div>
+                
+                <aside class="notes">
+                    Aquí comenzamos la parte práctica enfocada específicamente en problemas de ingeniería civil. Vamos a mostrar: 1. Problemática actual: ingeniero perdiendo horas en reportes manuales, información dispersa en WhatsApp, Excel desactualizado, cliente esperando reportes. 2. Flujo automatizado: Telegram para captura → n8n para procesamiento → Google Sheets para almacenamiento → Google AI Studio para generación de reportes. 3. Demo en vivo con casos reales de construcción. 4. Si hay tiempo, mostramos integraciones adicionales.
+                </aside>
+            </section>
+
+            <!-- Slide 14: Fin -->
+            <section>
+                <h2>🎯 Fin</h2>
+                
+                <div style="text-align: center; padding: 60px;">
+                    <h3>🏗️ ¡Gracias, colegas ingenieros!</h3>
+                    <p style="color: #888888;">¿Preguntas sobre automatización en construcción?</p>
+                    <br>
+                    <div class="engineering-focus">
+                        <p><strong>🚀 Digiall</strong></p>
+                        <p>🌐 www.digiall.mx</p>
+                        <p>📞 55 4440 5487</p>
+                        <p>📧 Consultas gratuitas para implementación en obras</p>
+                    </div>
+                </div>
+
+                <div class="engineering-focus">
+                    💡 <strong>Próximos pasos:</strong> Si quieren implementar este sistema en su constructora, podemos hacer una consultoría gratuita para evaluar sus procesos actuales y diseñar la automatización específica.
+                </div>
+                
+                <aside class="notes">
+                    Cierre dirigido a ingenieros civiles. Tiempo para preguntas específicas sobre implementación en obras. Si terminamos pronto, podemos hacer demostraciones adicionales en vivo o hablar de casos específicos de construcción. Recordar mencionar que ofrecemos consultoría gratuita para evaluar procesos de obra y que pueden contactarnos para implementaciones específicas en sus proyectos. Enfatizar que entendemos los retos específicos de la industria de la construcción.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

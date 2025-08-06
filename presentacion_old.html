@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>De la Obra al Dato: Cómo la IA está Automatizando el Control de Proyectos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
+    <style>
+        :root {
+            --r-main-font: 'Inter', sans-serif;
+            --r-heading-font: 'Inter', sans-serif;
+            --r-main-color: #888888; /* DIGIALL Grey */
+            --r-heading-color: #624059; /* DIGIALL Purple */
+            --r-link-color: #624059; /* DIGIALL Purple */
+        }
+        .reveal {
+            font-size: 24px; /* Reduced base font size */
+        }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            font-weight: 700;
+        }
+        .reveal h1 { font-size: 2.5em; }
+        .reveal h2 { font-size: 1.8em; }
+        .reveal h3 { font-size: 1.3em; }
+        .reveal p, .reveal li { font-size: 0.9em; }
+
+        .reveal .slides section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .split-layout {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: stretch !important;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+        .split-layout .text-content, .split-layout .image-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1.5em; /* Reduced padding */
+        }
+        .split-layout .text-content {
+            text-align: left;
+        }
+        .split-layout .image-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section class="split-layout">
+                <div class="text-content">
+                    <h1>De la Obra al Dato 🏗️➡️📊</h1>
+                    <p>Cómo la IA está Automatizando el Control de Proyectos</p>
+                    <p><small>Presentado por [Tu Nombre] y DIGIALL</small></p>
+                </div>
+                <div class="image-content">
+                    <img src="digiall_newlogo 2.PNG" alt="DIGIALL Logo" style="width: 80%; height: auto; object-fit: contain;">
+                </div>
+                <aside class="notes">
+                    Buenos días a todos, somos [Tu Nombre] y un asistente de IA de DIGIALL. Es un honor estar aquí en la Semana de las Ingenierías...
+                    Para empezar, una pregunta rápida: levanten la mano si todavía lidian con el caos de los tickets de gastos...
+                </aside>
+            </section>
+
+            <section>
+                <h2>Somos DIGIALL 🤝</h2>
+                <h4>Su Socio en Soluciones Tecnológicas Integrales</h4>
+                <div style="display: flex; justify-content: space-around; width: 100%; margin-top: 2em;">
+                    <div class="fragment">💻<p>Software</p></div>
+                    <div class="fragment">📹<p>Seguridad</p></div>
+                    <div class="fragment">🌐<p>Infraestructura</p></div>
+                    <div class="fragment">🛠️<p>Soporte TI</p></div>
+                </div>
+                <aside class="notes">
+                    En DIGIALL, nuestra misión es ser el socio tecnológico que impulsa la eficiencia y seguridad de las empresas. No nos limitamos a instalar equipos; diseñamos e implementamos soluciones tecnológicas integrales. Ya sea robusteciendo la seguridad de una obra con cámaras y controles de acceso, o centralizando toda la gestión de una empresa con un ERP como Odoo, nuestro objetivo es que la tecnología trabaje para ustedes.
+                </aside>
+            </section>
+
+            <section>
+                <h2>De la Teoría a la Realidad: Un Viaje en el Tiempo ⏳</h2>
+                <p>La IA no es nueva, pero su explosión sí.</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li class="fragment"><strong>Años 50: El Nacimiento.</strong> Máquinas que piensan (IA Simbólica).</li>
+                    <li class="fragment"><strong>Años 80-90: El Resurgimiento.</strong> Machine Learning: la máquina aprende las reglas.</li>
+                    <li class="fragment"><strong>2012 - Hoy: La Explosión.</strong> Big Data, Hardware Potente (GPUs), Deep Learning.</li>
+                </ul>
+                <aside class="notes">
+                    La idea de 'máquinas que piensan' no es nueva. Nació oficialmente en 1956. Al principio, los pioneros intentaron darle a las máquinas reglas para todo, lo que se conoce como IA Simbólica. Era como intentar escribir un manual de instrucciones para ser humano. No funcionó muy bien.
+                    La idea cambió radicalmente con el Machine Learning. El nuevo enfoque fue: en lugar de darle las reglas, vamos a darle miles de ejemplos y que la máquina *aprenda* las reglas por sí misma. Fue un cambio de paradigma.
+                    Tres cosas ocurrieron para que esto explotara: 1) Big Data (toneladas de datos de internet), 2) Hardware Potente (las GPUs de los videojuegos resultaron ser perfectas para esto) y 3) Algoritmos de Deep Learning (redes neuronales profundas).
+                    ¿Cómo Funciona (La explicación de 2 minutos)?: Piensen en una red neuronal como un sistema que busca patrones a una escala masiva. Si le muestras 100,000 fotos de planos estructurales y 100,000 fotos de planos arquitectónicos, con el tiempo, aprende a diferenciarlos. Los modelos como ChatGPT o Gemini han hecho esto, pero con casi todo el texto de internet. No 'saben' en el sentido humano, pero son maestros absolutos en reconocer y generar patrones de lenguaje.
+                    Los Líderes del Juego: Hoy, el campo está liderado por gigantes que construyen estos 'motores' de IA: OpenAI (con el respaldo de Microsoft), Google (con su modelo Gemini), y Meta (que impulsa el código abierto con Llama). Y no podemos olvidar a NVIDIA, que fabrica el hardware esencial, las GPUs, sobre las que todo esto corre. Son los picos y palas de esta fiebre del oro.
+                </aside>
+            </section>
+
+            <section>
+                <h2>De la Teoría a la Realidad: Un Viaje en el Tiempo ⏳</h2>
+                <p>La IA no es nueva, pero su explosión sí.</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li class="fragment"><strong>Años 50: El Nacimiento.</strong> Máquinas que piensan (IA Simbólica).</li>
+                    <li class="fragment"><strong>Años 80-90: El Resurgimiento.</strong> Machine Learning: la máquina aprende las reglas.</li>
+                    <li class="fragment"><strong>2012 - Hoy: La Explosión.</strong> Big Data, Hardware Potente (GPUs), Deep Learning.</li>
+                </ul>
+                <aside class="notes">
+                    La idea de 'máquinas que piensan' no es nueva. Nació oficialmente en 1956. Al principio, los pioneros intentaron darle a las máquinas reglas para todo, lo que se conoce como IA Simbólica. Era como intentar escribir un manual de instrucciones para ser humano. No funcionó muy bien.
+                    La idea cambió radicalmente con el Machine Learning. El nuevo enfoque fue: en lugar de darle las reglas, vamos a darle miles de ejemplos y que la máquina *aprenda* las reglas por sí misma. Fue un cambio de paradigma.
+                    Tres cosas ocurrieron para que esto explotara: 1) Big Data (toneladas de datos de internet), 2) Hardware Potente (las GPUs de los videojuegos resultaron ser perfectas para esto) y 3) Algoritmos de Deep Learning (redes neuronales profundas).
+                    ¿Cómo Funciona (La explicación de 2 minutos)?: Piensen en una red neuronal como un sistema que busca patrones a una escala masiva. Si le muestras 100,000 fotos de planos estructurales y 100,000 fotos de planos arquitectónicos, con el tiempo, aprende a diferenciarlos. Los modelos como ChatGPT o Gemini han hecho esto, pero con casi todo el texto de internet. No 'saben' en el sentido humano, pero son maestros absolutos en reconocer y generar patrones de lenguaje.
+                    Los Líderes del Juego: Hoy, el campo está liderado por gigantes que construyen estos 'motores' de IA: OpenAI (con el respaldo de Microsoft), Google (con su modelo Gemini), y Meta (que impulsa el código abierto con Llama). Y no podemos olvidar a NVIDIA, que fabrica el hardware esencial, las GPUs, sobre las que todo esto corre. Son los picos y palas de esta fiebre del oro.
+                </aside>
+            </section>
+
+            <section>
+                <h2>El Método 🧩</h2>
+                <p>Un equipo de especialistas digitales:</p>
+                <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 50px; width: 100%;">
+                    <div class="fragment">
+                        <h3>👁️ El Ojo</h3>
+                        <p>IA de Visión</p>
+                    </div>
+                    <div class="fragment">
+                        <h3>🧠 El Cerebro</h3>
+                        <p>IA de Lenguaje</p>
+                    </div>
+                    <div class="fragment">
+                        <h3>⚡ El Sistema Nervioso</h3>
+                        <p>IA de Automatización</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Aquí está la idea más importante que queremos transmitir hoy. No se usa 'una IA', se combinan varias. Es como un equipo de especialistas.
+                    1. El Ojo (Visión por Computadora / OCR): Esta es la IA que 've'. Su única función es mirar una imagen y convertir los píxeles en texto crudo. Es el recepcionista que digitaliza el documento.
+                    2. El Cerebro (Modelos de Lenguaje - LLMs): Esta es la IA que 'piensa'. Toma el texto crudo del 'ojo' y lo entiende. Sabe que 'Total' es un precio y '06/2025' es una fecha. Es el analista que extrae la información valiosa.
+                    3. El Sistema Nervioso (Plataformas de Automatización): Esta es la pieza que conecta todo. En DIGIALL lo llamamos el 'integrador'. De nada sirve tener la mejor cámara de seguridad si no se comunica con el sistema de alarmas. De nada sirve un CRM si no está conectado a su web. Esta plataforma, en nuestro caso n8n, es el maestro de obras que orquesta el flujo de trabajo entre las IAs y sus otras herramientas, como Google Sheets.
+                </aside>
+            </section>
+
+            <section class="split-layout">
+                <div class="text-content">
+                    <h2>Taller en Vivo 👨‍💻</h2>
+                    <h3>Construyendo un Agente de Gastos</h3>
+                    <p class="fragment">Vamos a transformar una simple foto de un ticket en una fila de una hoja de cálculo, automáticamente.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/5849573/pexels-photo-5849573.jpeg" alt="Receipt">
+                </div>
+                <aside class="notes">
+                    Aquí tenemos nuestro registro de gastos, limpio. Ahora voy a tomar una foto de este ticket de compra real. La enviamos a nuestro agente. Y miren... el sistema se ha activado. Y ahí lo tienen. La información extraída, ordenada y registrada. Sin intervención manual.
+                </aside>
+            </section>
+
+            <section>
+                <h2>El Flujo por Dentro</h2>
+                <p>Una secuencia lógica de pasos en n8n:</p>
+                <img src="https://i.imgur.com/sKeiYpM.png" alt="Flujo de n8n" style="width: 80%; border: 1px solid #eee; background: #f9f9f9; padding: 1em;">
+                <aside class="notes">
+                    Ahora, vamos a ver cómo funciona esto por dentro. Es más simple de lo que parece.
+                    Nodo 1 (El Disparador): Todo empieza aquí. El sistema está 'escuchando' hasta que llega un nuevo correo con una foto.
+                    Nodo 2 (El Ojo - IA de Visión): Este nodo toma la imagen y la envía a la API de Google o de OpenAI. Lo único que le pedimos es 'lee el texto de esta imagen'. Nos devuelve un bloque de texto desordenado.
+                    Nodo 3 (El Cerebro - LLM): Aquí está la inteligencia. Le pasamos el texto crudo a un modelo como Gemini y le damos una instrucción en español: 'Eres un asistente de contabilidad. De este texto, extrae en formato JSON: el nombre del proveedor, el monto total con impuestos y la fecha del ticket'. La clave es la calidad de esta instrucción, el 'prompt'.
+                    Nodo 4 (La Mano - Google Sheets): Este último nodo es simple. Toma los datos ya limpios y estructurados del paso anterior y los inserta en las columnas correctas de nuestra hoja. Mapeamos 'proveedor' a la columna 'Proveedor', y así sucesivamente.
+                    Hablemos de Dinero: ¿Y esto es caro? Cada llamada a estas APIs cuesta fracciones de centavo. Un ticket completo puede costar entre uno y tres centavos de dólar procesarlo. Ahora comparen eso con el costo de la hora de un ingeniero o un administrativo. El retorno de inversión es masivo.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Más Allá de los Gastos 🚀</h2>
+                <p>Otras aplicaciones accesibles con las mismas herramientas:</p>
+                <aside class="notes">
+                    Ahora que entienden el método, las posibilidades son enormes. Pensemos como ingenieros.
+                </aside>
+            </section>
+
+            <section class="split-layout">
+                <div class="text-content">
+                    <h2>Caso 1: Bitácora por Voz 🎤</h2>
+                    <p>Dicte notas de voz durante el día. Una IA las transcribe, las formatea como una bitácora profesional y las archiva.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg" alt="Voice Recording">
+                </div>
+                <aside class="notes">
+                    El Problema: "Escribir la bitácora al final del día es tedioso y la información puede ser imprecisa."
+                    La Solución IA: "Imaginen dictar notas de voz durante el día con su celular. Al final de la jornada, un sistema de IA transcribe el audio, lo estructura como una entrada de bitácora profesional y la archiva o la envía para su aprobación. Cero tiempo de redacción, máxima precisión."
+                </aside>
+            </section>
+
+            <section class="split-layout">
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/5474993/pexels-photo-5474993.jpeg" alt="Safety Vest">
+                </div>
+                <div class="text-content">
+                    <h2>Caso 2: Checklist de Seguridad 🛡️</h2>
+                    <p>Tome fotos durante su inspección. Una IA de visión analiza si se cumple la norma y genera una alerta inmediata si detecta una falla.</p>
+                </div>
+                <aside class="notes">
+                    El Problema: "Los checklists en papel no garantizan una inspección real y no dejan evidencia visual."
+                    La Solución IA: "El encargado de seguridad usa un formulario en su móvil que le exige tomar una foto para cada punto a verificar. Una IA de visión analiza la foto y confirma si, por ejemplo, el personal usa casco o si una zanja tiene el apuntalamiento correcto. Si detecta una falla, genera una alerta inmediata al gerente de obra con la foto como prueba. Es un sistema de auditoría imposible de falsear."
+                </aside>
+            </section>
+
+            <section class="split-layout">
+                <div class="text-content">
+                    <h2>Caso 3: Clasificador de Emails 📧</h2>
+                    <p>Un asistente de IA lee los correos del proyecto, los clasifica (Urgente, Consulta, Reporte) y ejecuta acciones.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/4050318/pexels-photo-4050318.jpeg" alt="Email Inbox">
+                </div>
+                <aside class="notes">
+                    El Problema: "La bandeja de entrada del gerente de proyecto es un caos. Identificar lo urgente consume horas."
+                    La Solución IA: "Un asistente de IA lee todos los correos de una cuenta centralizada del proyecto. Clasifica cada correo (Solicitud Urgente de Cliente, Consulta de Contratista, etc.), lo resume y ejecuta una acción: notifica por SMS al gerente si es urgente, crea una tarea en Trello para el residente si es una consulta de campo, o archiva un reporte de proveedor en Drive. Es un filtro inteligente que organiza la comunicación 24/7."
+                </aside>
+            </section>
+
+            <section>
+                <h2>Conclusión: IA es un Copiloto 🤖🤝</h2>
+                <ul>
+                    <li class="fragment">La supervisión del ingeniero es crucial.</li>
+                    <li class="fragment">La privacidad y seguridad de los datos es fundamental.</li>
+                    <li class="fragment">La clave es empezar pequeño, con un problema real.</li>
+                </ul>
+                <aside class="notes">
+                    Consideraciones Clave: "Dos cosas importantes. Uno: la IA no es perfecta, puede cometer errores. La supervisión del ingeniero sigue siendo crucial. Es un copiloto, no el piloto. Dos: la privacidad de datos es fundamental. En DIGIALL, les ayudamos a navegar estas aguas para usar estas herramientas de forma segura."
+                    Kit de Inicio Rápido: "¿Cómo empezar mañana? 1. Descarguen n8n Desktop (es gratis para empezar). 2. Creen una cuenta en Google AI Studio o la plataforma de OpenAI. Dan créditos gratuitos. 3. Tengan a mano su cuenta de Google Drive o la herramienta que quieran automatizar."
+                    Mensaje Final de DIGIALL: "Como han visto, la IA es real, accesible y poderosa. En DIGIALL, estamos aquí para ser sus aliados en esta transformación. Ya sea que su primer paso sea asegurar sus proyectos con un sistema de control de acceso, optimizar su red de datos, o como vimos hoy, empezar a construir sus propios agentes de automatización, nuestro equipo está listo para acompañarlos. No se trata solo de instalar tecnología, se trata de construir soluciones que generan eficiencia, seguridad y rentabilidad." Muchas gracias.
+                </aside>
+            </section>
+
+            <section class="split-layout">
+                <div class="text-content">
+                    <h2>¿Preguntas?</h2>
+                    <hr>
+                    <h3>¡Muchas Gracias!</h3>
+                    <p>Ing. Oscar Zacaula Pedraza</p>
+                    <p>DIGIALL - Soluciones Tecnológicas Integrales</p>
+                    <p>ozacaula@digiall.mx</p>
+                    <p>2221901591</p>
+                    <p>www.digiall.mx</p>
+                    <p>RFC: CTD1211129W3 CONSULTORES DE TI DIGIALL Mx</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Teamwork">
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide',
+            plugins: [ RevealNotes ]
+        });
+    </script>
+</body>
+</html>
