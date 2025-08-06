@@ -173,3 +173,30 @@
     border-radius: 8px;
     margin: 15px 0;
 }
+
+/* Efectos de fragmentos para el logo */
+.reveal .fragment.zoom-in {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.reveal .fragment.zoom-in.visible {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.8s ease;
+}
+
+/* Efecto de zoom inicial para el logo */
+.logo-container img.fragment {
+    transition: all 0.8s ease;
+}
+
+.logo-container img.fragment:not(.visible) {
+    transform: scale(3);
+    opacity: 0.3;
+}
+
+.logo-container img.fragment.visible {
+    transform: scale(1);
+    opacity: 1;
+}
