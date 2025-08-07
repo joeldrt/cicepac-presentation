@@ -285,12 +285,24 @@
                 </aside>
             </section>
 
-            <!-- Slide 13: Taller -->
+            <!-- Slide 13: Un problema común -->
             <section>
-                <h2>🔧 Taller</h2>
+                <h2>⚠️ Un problema común</h2>
                 
-                <div style="text-align: center; margin: 20px 0; padding: 0 1em;">
-                    <img src="resources/images/workshop/workshop.png" alt="Diagrama del Taller" style="max-width: 80%; width: auto; height: auto; border-radius: 10px; object-fit: contain;">
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; margin: 40px 0;">
+                    <div class="fragment" data-fragment-index="1" style="flex: 1; text-align: center; margin: 0 20px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 20px; color: #624059;">Todas las interacciones generan datos</h3>
+                        <img src="resources/images/workshop/workers-creating-data.png" 
+                             alt="Trabajadores generando datos" 
+                             style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                    
+                    <div class="fragment" data-fragment-index="2" style="flex: 1; text-align: center; margin: 0 20px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 20px; color: #624059;">Es difícil agrupar y utilizar esos datos</h3>
+                        <img src="resources/images/workshop/engineer-hard-time.png" 
+                             alt="Ingeniero con dificultades" 
+                             style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
                 </div>
                 
                 <aside class="notes">
@@ -298,7 +310,100 @@
                 </aside>
             </section>
 
-            <!-- Slide 14: Fin -->
+            <!-- Slide 14: ¿No sería mejor? -->
+            <section>
+                <h2>💡 ¿No sería mejor?</h2>
+                
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; margin: 40px 0;">
+                    <div class="fragment" data-fragment-index="1" style="flex: 1; text-align: center; margin: 0 20px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 20px; color: #624059;">Automatizar la recolección de datos</h3>
+                        <img src="resources/images/workshop/n8n-robot.png" 
+                             alt="Robot n8n" 
+                             style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                    
+                    <div class="fragment" data-fragment-index="2" style="flex: 1; text-align: center; margin: 0 20px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 20px; color: #624059;">Hablar solo con nuestros datos</h3>
+                        <img src="resources/images/workshop/engineer-happy.png" 
+                             alt="Ingeniero feliz" 
+                             style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Slide 15: Taller -->
+            <section>
+                <h2>🔧 Taller</h2>
+                
+                <div style="margin: 40px 0;">
+                    <h3 style="text-align: center; margin-bottom: 30px; color: #624059;">Lista de herramientas que se utilizarán</h3>
+                    
+                    <table style="width: 85%; margin: 0 auto; border-collapse: collapse; font-size: 0.8em;">
+                        <thead>
+                            <tr style="background-color: #f8f9fa;">
+                                <th style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #624059; font-weight: bold; width: 20%;">Logo</th>
+                                <th style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #624059; font-weight: bold; width: 20%;">Nombre</th>
+                                <th style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #624059; font-weight: bold; width: 40%;">Uso</th>
+                                <th style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #624059; font-weight: bold; width: 20%;">Costo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">
+                                    <img src="resources/images/tools/n8n-logo.png" alt="n8n Logo" style="height: 25px; width: auto;">
+                                </td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #888888;">n8n</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Sistema orquestador del flujo (no code)</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">24 USD por mes<br>14 días free trial</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">
+                                    <img src="resources/images/tools/openai-logo.png" alt="OpenAI Logo" style="height: 25px; width: auto;">
+                                </td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #888888;">OpenAI API Token</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Conecta GPT-4.1-mini a n8n</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Depende del uso, pero no debe exceder de 10 USD al mes</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">
+                                    <img src="resources/images/tools/telegram-logo.png" alt="Telegram Logo" style="height: 25px; width: auto;">
+                                </td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #888888;">Telegram</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Interfaz de usuario</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Gratis</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">
+                                    <img src="resources/images/tools/google-sheets-logo.png" alt="Google Sheets Logo" style="height: 25px; width: auto;">
+                                </td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #888888;">Google Sheets</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Lugar donde se concentra la información</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Gratis</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">
+                                    <img src="resources/images/tools/google-ai-studio-logo.png" alt="Google AI Studio Logo" style="height: 25px; width: auto;">
+                                </td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; text-align: center; color: #888888;">Google AI Studio</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Interfaz - Ingeniero - IA - Datos recopilados</td>
+                                <td style="border: 1px solid #dee2e6; padding: 8px; color: #888888;">Gratis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+
+            <!-- Slide 16: Live Demo Time -->
+            <section>
+                <h1>🚀 ¡Live Demo Time!</h1>
+                
+                
+                
+            </section>
+
+            <!-- Slide 17: Fin -->
             <section>
                 <h1>FIN</h1>
                 
